@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_4M_21_pojazdy2.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label Text="Pojazdy"
+                   HorizontalOptions="Center"
+                   FontSize="40" 
+                   />
+            <Label x:Name="lblNr" />
+            <Label x:Name="lblMarka" />
+            <Label x:Name="lblModel" />
+            <Label x:Name="lblKolor" />
+            <Label x:Name="lblPrzebieg" />
+            <Label x:Name="lblRocznik" />
+            <Label x:Name="lblCena" />
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Button
+                    x:Name="btnPoprzedni"
+                    Clicked="btnPoprzedniClicked"
+                    Text="Poprzedni"
+                    WidthRequest="100"
+                    IsEnabled="False"
+                    />
+                <Button
+                    x:Name="btnNastepny"
+                    Clicked="btnNastepnyClicked"
+                    Text="Następny"
+                    WidthRequest="100"
+                    />
+            </HorizontalStackLayout>
+            
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
